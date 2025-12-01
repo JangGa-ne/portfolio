@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장제현 | 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-content">
+            <img class="profile_image" src="profile.png" alt="profile">
+            <h1>Application Developer</h1>
+            <h2>애플리케이션 개발자 <b>장제현</b>입니다.</h2>
+            <p>
+                사용자 경험을 최우선으로 고민하는 <b>괄목상대</b> 마인드,<br>
+                <b>신뢰</b>할 수 있는 코드를 만들어내는 개발자입니다.
+            </p>
+        </div>
+        <div class="animate-bounce-container">
+            <img src="angle-down.png" alt="down">
+            <img src="angle-down.png" alt="down">
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h1>About me</h1>
+        <div class="content-block">
+            <div class="img-container">
+                <img src="2.png" alt="마이 이모지">
+                <div class="blur-overlay-content"></div>
+            </div>
+            <div class="hashtag-section">
+                <ul class="hashtag-list">
+                    <li class="hashtag-item">#괄목상대</li>
+                    <li class="hashtag-item">#신뢰</li>
+                    <li class="hashtag-item">#피드백,수용</li>
+                    <li class="hashtag-item">#끊임없는_배움</li>
+                </ul>
+            </div>
+            <div class="title-div">Interview</div>
+            <div class="view-container">
+                <h3>Q. 다양한 개발 분야 중 특별히 iOS 앱 개발을 선택하게 된 계기?</h3>
+                <p style="font-weight: lighter;">
+                    학교 수업에서 <b>웹 디자인 및 응용 프로그래밍</b>을 처음 접하면서 코딩의 매력을 느끼게 되었습니다.
+                    특히, <b>애플 웹사이트 제작 과제</b>를 수행하며 <b>애플 생태계의 디자인 철학과 사용자 경험</b>에 깊은 인상을 받았습니다.
+                    이 경험을 통해 사용자에게 직접적이고 직관적인 가치를 제공하는 애플리케이션 개발에 대한 흥미가 커졌고, 이는 자연스럽게 iOS 앱 개발자로의 전향을 결심하는 계기가 되었습니다.<br><br>
+                    저는 iOS 개발이 단순히 코드를 작성하는 것을 넘어, <b>사용자의 삶에 긍정적인 영향을 미칠 수 있는 결과물</b>을 만드는 과정이라고 생각합니다.
+                    또한, <b>Objective-C, Swift, RxSwift</b> 등 끊임없이 발전하는 iOS 개발 생태계 속에서 <b>다양한 프레임워크와 라이브러리를 탐구하고 도입</b>하며 <b>새로운 기술적 도전에 나서는 것</b>을 즐기고 있습니다.
+                    이러한 도전은 저를 지속적으로 성장시키고, 더 나은 앱을 만들기 위한 원동력이 됩니다.
+                </p>
+            </div>
+            <div class="view-container">
+                <h3>Q. 가장 인상 깊었던 기술적 어려움과 해결 과정?</h3>
+                <p style="font-weight: lighter;">
+                    제가 겪었던 가장 인상 깊은 기술적 어려움은 클라우드 서버의 미디어 파일 업로드 시 용량 및 품질 문제였습니다.
+                    고품질 파일 업로드 시 서버의 제한과 속도 문제로 인해 병목 현상이 발생했습니다.<br><br>
+                    초기에는 여러 라이브러리로 압축을 시도했지만 만족스러운 결과를 얻기 어려웠습니다.
+                    저는 단순히 파일 크기를 줄이는 것을 넘어, <b>사용자가 체감하는 품질 저하를 최소화하면서 서버의 부하를 줄일 수 있는 최적의 지점</b>을 찾는 데 집중했습니다.
+                    이를 위해 다양한 압축 알고리즘과 인코딩 방식을 조합하여 <b>수백 번의 코드 테스트를 진행하고 데이터를 분석</b>했습니다.<br><br>
+                    결국, 특정 미디어 타입에 맞는 <b>다단계 커스텀 압축 로직을 직접 구현</b>하고, 파일을 <b>작은 Array에 담아 용량을 계산한 후 청크(chunk)</b> 단위로 끊어서 보내는 방식을 도입했습니다.
+                    또한, 네트워크 불안정 시 업로드 실패를 방지하기 위해 자동으로 재시도하는 로직도 추가했습니다.
+                    이 과정을 통해 저는 품질 저하를 최소화하면서 미디어 파일을 효율적으로 관리하는 솔루션을 찾아낼 수 있었습니다.
+                    이 경험은 문제의 본질을 파고들어 집요하게 해결책을 찾는 것의 중요성을 깨닫게 해주었습니다.
+                </p>
+            </div>
+            <div class="view-container">
+                <h3>Q. 기술적 부채 상황 시 어떻게 결정하고 대처할 것 인가?</h3>
+                <p style="font-weight: lighter;">
+                    기술적 부채 상황에서는 <b>먼저 부채의 영향도와 시급성을 판단</b>합니다.
+                    만약 서비스의 핵심 기능이나 안정성에 치명적인 영향을 준다면, <b>팀과 소통하여 최우선으로 해결</b>할 것을 제안하고 리팩토링이나 버그 픽스에 집중할 것입니다.
+                    당장 심각하지 않다면, <b>단기적 해결책과 장기적 개선 계획을 수립하여 점진적으로 해결</b>해 나가는 것을 선호합니다.
+                    이때 테스트 코드 작성과 문서화는 필수적입니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="title-div">Skill & Tools</div>
+            <h2>Skill</h2>
+            <div class="content-grid">
+                <img src="image/icon/swift.png" alt="Swift 아이콘">
+                <img src="image/icon/objective-c.png" alt="Objective-C 아이콘">
+                <img src="image/icon/nodejs.png" alt="Node.js 아이콘">
+                <img src="image/icon/python.png" alt="Python 아이콘">
+                <img src="image/icon/html.png" alt="HTML 아이콘">
+                <img src="image/icon/css.png" alt="CSS 아이콘">
+                <img src="image/icon/javascript.png" alt="JavaScript 아이콘">
+                <img src="image/icon/java.png" alt="Java 아이콘">
+            </div>
+            <h2>Tools</h2>
+            <div class="content-grid">
+                <img src="image/icon/figma.png" alt="Figma 아이콘">
+                <img src="image/icon/photoshop.png" alt="Photoshop 아이콘">
+                <img src="image/icon/firebase.png" alt="Firebase 아이콘">
+                <img src="image/icon/aws.png" alt="AWS 아이콘">
+                <img src="image/icon/github.png" alt="Github'= 아이콘">
+                <img src="image/icon/notion.png" alt="Notion 아이콘">
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="title-div">Career</div>
+            <div class="product-cards-container">
+                <div class="product-card">
+                    <p>2025.06 - 재직중</p>
+                    <h2>(주)신도리코 본사</h2>
+                    <h3>CS사업부 LI팀 Manager (팀원 10명)</h3>
+                    <ul>
+                        <li>기업·공공기관 대상 OA 장비 솔루션의 기종별 프로토콜 분석 및 시스템 연동 설계</li>
+                        <li>인트라넷 기반 환경에서 서버·네트워크 구성 및 보안 정책 반영 작업 수행</li>
+                        <li>실제 고객사의 인프라 환경을 기반으로 문제 원인 추적 및 실시간 트러블슈팅 수행</li>
+                        <li>물류·설치 과정의 작업 절차 최적화 및 데이터 기반 효율화 경험</li>
+                        <li>기술지원 매뉴얼을 표준화·문서화해 팀 단위 품질 향상에 기여</li>
+                        <!-- <li>고객사 : 아이센스(서초) / 신세계백화점(명동) / 노루그룹(선릉, 논현) / 패스트파이브(뚝섬) / 아성다이소(도곡) / 월드비전(여의도) / 한화갤러리아(여의도) / 이그니스(성수) / KT M모바일(선릉) / 신한벤처투자(강남) / 한양대학교(성동) / 삼성생명서비스손해사정(영등포) / CJ제일재당(을지로) / 파르나스 호텔(삼성) / 모라이(선릉) / 교원(을지로) / 버킷플레이스[오늘의집](강남) / 서울보증보험(삼각지) / 보령제약(을지로) / 효성그룹(공덕, 을지로) / 신세계시코르(강남) / 두산건설(강남) / 동서식품(마포) / 동화약품(서대문, 을지로)</li> -->
+                    </ul>
+                    
+                </div>
+                <div class="product-card">
+                    <p>2025.03 - 2025.04</p>
+                    <h2>(주)하이퍼브레인랩 본사</h2>
+                    <h3>시스템사업부 & 대표직속 Manager / Developer</h3>
+                    <ul>
+                        <li>사내 업무 알림 서비스의 기능 설계·백엔드·배포 총괄(요구분석 → API 설계 → 릴리즈)</li>
+                        <li>제품 PM 겸 기술총괄로서 웹/앱 프로젝트(Brip)와 블루투스 웨어러블 통합 과제 관리: 스펙 정의, 기술 리스크 관리, 외부 연동(블루투스·지도 API) 검증</li>
+                        <li>지도 기반 예약·위치 서비스 설계 경험(지도 API 활용·위치권한·동기화 정책 설계) 및 개발팀과의 기술적 조정 주도</li>
+                        <li>프로토타입부터 운영 전환까지의 기술적 의사결정(아키텍처·인프라) 수행</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <p>2024.01 - 2024.09</p>
+                    <h2>(주)치코 본사</h2>
+                    <h3>플랫폼부문 개발팀 Team Leader / Developer (팀원 4명)</h3>
+                    <ul>
+                        <li>플랫폼 전반의 프로덕트·기술 총괄(PM+Tech Lead): 서비스 기획, 클라우드 백엔드 설계 및 iOS 앱 개발·배포·유지보수 주도</li>
+                        <li>클라우드 서버 개발(인증·API·데이터 모델링) 및 효율적인 CI/CD 파이프라인 도입으로 릴리즈 안정성 향상</li>    
+                        <li>UX·디자인 파트와 협업해 기능 요구사항을 UI·플로우로 전환하고, 사용자 피드백을 반영한 빠른 반복 배포 진행</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <p>2023.01월 - 2023.12</p>
+                    <h2>(주)블링크코퍼레이션 본사</h2>
+                    <h3>개발사업부 기술개발팀 Developer (팀원 4명)</h3>
+                    <ul>
+                        <li>지역 기반 광고 앱 및 계열사 플랫폼 앱 개발 주도(기획 참여 포함)</li>
+                        <li>클라이언트(App) 중심 기능 개발 및 운영 최적화(푸시/광고 트래킹/로컬 DB 동기화) 수행</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <p>2019.02 - 2021.06</p>
+                    <h2>(주)이음크리에이티브 기업연구소</h2>
+                    <h3>모바일사업부 개발팀 Part Leader / Developer (팀원 5명)</h3>
+                    <ul>
+                        <li>교육청·학교 대상 공공 앱 다수 개발(학부모 긴급 알림, 학생 모바일증 등) — 안정성·실시간성 요구가 높은 서비스 경험</li>
+                        <li>SK망 연동 안심전화, 스마트홈·태양광 발전소 모니터링 등 다양한 IoT·통신 연계 프로젝트 수행</li>
+                        <li>프로젝트 단위 PM·개발·테스트·배포를 담당하며, 공공기관 규격·보안요구 반영 경험 보유</li>
+                        <li>국가 R&D 과제 참여로 연구형 개발 프로세스 경험 (요구분석·성과보고·기술문서화)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="title-div">Project</div>
+            <div class="horizontal-scroll-grid-container">
+                <div class="grid-item" onclick="openModal('detail.html')">
+                    <img src="image/chiko.png" alt="">
+                    <h2>CHIKO</h2>
+                    <p>해외 도, 소매 거래 쇼핑몰</p>
+                </div>
+                <div class="grid-item" onclick="openModal('detail.html')">
+                    <img src="image/legoyangpagu.png" alt="">
+                    <h2>레고양파주</h2>
+                    <p>고양, 파주 시민이라면 모여라~!</p>
+                </div>
+                <div class="grid-item" onclick="openModal('detail.html')">
+                    <img src="image/aprtment.png" alt="">
+                    <h2>APT</h2>
+                    <p>우리집은 스마트 홈</p>
+                </div>
+                <div class="grid-item" onclick="openModal('detail.html')">
+                    <img src="image/mobilepass.png" alt="">
+                    <h2>모바일 학생증</h2>
+                    <p>쉽고 빠른 등, 하교 스캐너</p>
+                </div>
+                <div class="grid-item" onclick="openModal('detail.html')">
+                    <img src="image/kumnamu.png" alt="">
+                    <h2>학교정보통 꿈나무</h2>
+                    <p>우리아이 학교 알리미</p>
+                </div>
+                <div class="grid-item" onclick="openModal('detail.html')">
+                    <img src="image/damoa.png" alt="">
+                    <h2>부산교육 다모아</h2>
+                    <p>필요한 건 다~ 모았다!</p>
+                </div>
+                <div class="grid-item" onclick="openModal('detail.html')">
+                    <img src="image/malguem.png" alt="">
+                    <h2>맑음</h2>
+                    <p>태양광 발전 실시간 모니터링</p>
+                </div>
+            </div>
+
+            <div id="detailModal" class="modal-overlay">
+                <div class="modal-content">
+                    <button class="close-button" onclick="closeModal()">&times;</button>
+                    <div id="modalContentArea">
+                        로딩 중...
+                    </div>
+                    </div>
+            </div>
+            <script src="index.js"></script>
+        </div>
+
+        <div class="content-block">
+            <div class="title-div">Education</div>
+            <div class="cards-container">
+                <div class="card-item">
+                    <p>2025.03 - 재학중</p>
+                    <h2>서울과학기술대학교</h2>
+                    <h3>미래융합대학 정보통신융합공학과</h3>
+                    <ul>
+                        <li>프로그래밍 입문 C</li>
+                        <li>객체지향 프로그래밍 JAVA</li>
+                        <li>웹 프로그래밍 HTML, CSS, JS</li>
+                        <li>전기 전자 입문</li>
+                    </ul>
+                </div>
+                <div class="card-item">
+                    <p>2018.07 - 2018.12</p>
+                    <h2>KNT직업전문학교</h2>
+                    <h3>디지털 디자인 (웹 콘텐츠 디자인 제작)</h3>
+                    <ul>
+                        <li>디지털 디자인 프로젝트 (기획)</li>
+                        <li>디자인 구성요소 설계 및 제작 (스토리보드 작성)</li>
+                        <li>프로토타입 제작 및 테스트 (시안작업)</li>
+                        <li>구현 및 수정보안 (코딩작업)</li>
+                        <li>프로젝트 완료 및 사후관리 (수정 및 보안)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            Copyright 2025. jangjehyun all rights reserved.<br><br>
+            장제현 | devjang.001@gmail.com | <a href="https://github.com/JangGa-ne">https://github.com/JangGa-ne</a><br><br><br><br>
+            - The END -
+        </p>
+    </footer>
+</body>
+</html>
