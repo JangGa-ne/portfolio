@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>장제현 | 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    
+    <img id="detailImage" src="" alt="">
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const image = document.getElementById('detailImage');
+
+        image.src = params.get('img');;
+    </script>
+
+    <footer>
+        <p>
+            Copyright 2025. JANG JE HYUN all rights reserved.<br><br>
+            장제현 | devjang.001@gmail.com | <a href="https://github.com/JangGa-ne">https://github.com/JangGa-ne</a>
+        </p>
+    </footer>
 </body>
 </html>

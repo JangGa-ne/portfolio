@@ -163,52 +163,54 @@
         <div class="content-block">
             <div class="title-div">Project</div>
             <div class="horizontal-scroll-grid-container">
-                <div class="grid-item" onclick="openModal('detail.html')">
+                <div class="grid-item" data-img="image/chiko_detail.png" onclick="openModal('detail.html')">
                     <img src="image/chiko.png" alt="">
                     <h2>CHIKO</h2>
                     <p>해외 도, 소매 거래 쇼핑몰</p>
                 </div>
-                <div class="grid-item" onclick="openModal('detail.html')">
-                    <img src="image/legoyangpagu.png" alt="">
+                <div class="grid-item" data-img="image/legoyang_detail.png" onclick="openModal('detail.html')">
+                    <img src="image/legoyang.png" alt="">
                     <h2>레고양파주</h2>
                     <p>고양, 파주 시민이라면 모여라~!</p>
                 </div>
-                <div class="grid-item" onclick="openModal('detail.html')">
-                    <img src="image/aprtment.png" alt="">
+                <div class="grid-item" data-img="image/apartment_detail.png" onclick="openModal('detail.html')">
+                    <img src="image/apartment.png" alt="">
                     <h2>APT</h2>
                     <p>우리집은 스마트 홈</p>
                 </div>
-                <div class="grid-item" onclick="openModal('detail.html')">
+                <div class="grid-item" data-img="image/mobilepass_detail.png" onclick="openModal('detail.html')">
                     <img src="image/mobilepass.png" alt="">
                     <h2>모바일 학생증</h2>
                     <p>쉽고 빠른 등, 하교 스캐너</p>
                 </div>
-                <div class="grid-item" onclick="openModal('detail.html')">
+                <div class="grid-item" data-img="image/kumnamu_detail.png" onclick="openModal('detail.html')">
                     <img src="image/kumnamu.png" alt="">
                     <h2>학교정보통 꿈나무</h2>
                     <p>우리아이 학교 알리미</p>
                 </div>
-                <div class="grid-item" onclick="openModal('detail.html')">
+                <div class="grid-item" data-img="image/damoa_detail.png" onclick="openModal('detail.html')">
                     <img src="image/damoa.png" alt="">
                     <h2>부산교육 다모아</h2>
                     <p>필요한 건 다~ 모았다!</p>
                 </div>
-                <div class="grid-item" onclick="openModal('detail.html')">
+                <div class="grid-item"data-img="image/malguem_detail.png" onclick="openModal('detail.html')">
                     <img src="image/malguem.png" alt="">
                     <h2>맑음</h2>
                     <p>태양광 발전 실시간 모니터링</p>
                 </div>
             </div>
 
-            <div id="detailModal" class="modal-overlay">
-                <div class="modal-content">
-                    <button class="close-button" onclick="closeModal()">&times;</button>
-                    <div id="modalContentArea">
-                        로딩 중...
-                    </div>
-                    </div>
-            </div>
-            <script src="index.js"></script>
+            <script>
+                const gridItems = document.querySelectorAll('.grid-item');
+
+                gridItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const img = item.dataset.img;
+                    // URL 파라미터로 전달
+                    location.href = `detail.html?img=${img}`;
+                });
+                });
+            </script>
         </div>
 
         <div class="content-block">
@@ -242,7 +244,7 @@
     </div>
     <footer>
         <p>
-            Copyright 2025. jangjehyun all rights reserved.<br><br>
+            Copyright 2025. JANG JE HYUN all rights reserved.<br><br>
             장제현 | devjang.001@gmail.com | <a href="https://github.com/JangGa-ne">https://github.com/JangGa-ne</a><br><br><br><br>
             - The END -
         </p>
